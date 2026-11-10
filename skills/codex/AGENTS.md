@@ -204,4 +204,9 @@ Skills 存放在 `~/.codex/skills/`（个人）和 `.codex/skills/`（项目共�
 
 | 场景 | Skill | 触发条件 |
 |------|-------|----------|
-| 多步骤任务跟踪 / 自主执行 | `taskmaster` | 3+ 有序步骤且产生文件变更，或 "track tasks"、"make a plan"、"track progress"、"从零开始"、"长时任务" |
+| 多里程碑任务跟踪 | `taskmaster` | 3+ 有序步骤且产生文件变更，或用户要求 "track tasks"、"长时任务" |
+| 单一任务可视化进度 | `todo-list-csv` | 用户要求 CSV 清单或可视化进度；已用 `taskmaster` 时不叠加 |
+| 跨工具 / 跨会话接续 | `planning-with-files-zh` | 需要在 Claude Code 与 Codex 之间切换，或跨会话恢复任务状态 |
+| 创建或更新 Skill | `skill-creator` | "创建 skill"、"新建 skill"、"写个 skill"、"更新 skill" |
+
+同一任务只用一个跟踪类 skill；各 skill 的用法以其 `SKILL.md` 为准。
